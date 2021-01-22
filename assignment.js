@@ -74,14 +74,10 @@ function megaFriend (friend){
     
     var megafriend=friend[0];
 
-    for(var x=0; x <friend.length;x++ )
+    for(var x=0; x<friend.length; x++ )
     {
-        if(friend[x].length == megafriend.length)
-        {
-            megafriend=friend[x];
-
-        }
-       else if(friend[x].length>megafriend.length)
+        
+        if(friend[x].length>megafriend.length)
         {
             megafriend=friend[x];
         }
@@ -89,7 +85,7 @@ function megaFriend (friend){
   return megafriend;
 }
 
-var friendlist=["op","mis","abd","jrj"];//"misu","mohona","selfish arif"];
-console.log(megaFriend(friendlist));
+var friendlist=megaFriend(["opu","misu","mohona","selfish arif","selfish monu"]);
+console.log(friendlist);
 
             // End code for find largest string
